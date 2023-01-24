@@ -18,7 +18,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "spi-dependency-resolution",
+    name: "DependencyResolution",
     products: [
         .library(name: "DependencyResolution", targets: ["DependencyResolution"])
     ],
