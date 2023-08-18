@@ -14,10 +14,10 @@
 
 
 public struct ProductDependency: Codable, Equatable {
-    var identity: String
-    var name: String
-    var url: String
-    var dependencies: [ProductDependency]
+    public var identity: String
+    public var name: String
+    public var url: String
+    public var dependencies: [ProductDependency]
 
     public init(identity: String, name: String, url: String, dependencies: [ProductDependency]) {
         self.identity = identity
