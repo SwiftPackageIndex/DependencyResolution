@@ -13,9 +13,16 @@
 // limitations under the License.
 
 
-struct ProductDependency: Codable, Equatable {
+public struct ProductDependency: Codable, Equatable {
     var identity: String
     var name: String
     var url: String
     var dependencies: [ProductDependency]
+
+    public init(identity: String, name: String, url: String, dependencies: [ProductDependency]) {
+        self.identity = identity
+        self.name = name
+        self.url = url
+        self.dependencies = dependencies
+    }
 }
