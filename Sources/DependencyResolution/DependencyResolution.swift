@@ -14,16 +14,6 @@
 
 import Foundation
 
-public struct ResolvedDependency: Codable, Equatable {
-    public var packageName: String
-    public var repositoryURL: String
-
-    public init(packageName: String, repositoryURL: String) {
-        self.packageName = packageName
-        self.repositoryURL = repositoryURL
-    }
-}
-
 
 public protocol FileManager {
     func contents(atPath: String) -> Data?
