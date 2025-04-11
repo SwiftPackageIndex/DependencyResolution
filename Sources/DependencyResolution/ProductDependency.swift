@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-public struct ProductDependency: Codable, Equatable {
+public struct ProductDependency: Codable, Equatable, Sendable {
     public var identity: String
     public var name: String
     public var url: String
