@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-public struct ResolvedDependency: Codable, Equatable {
+public struct ResolvedDependency: Codable, Equatable, Sendable {
     public var packageName: String
     public var repositoryURL: String
 
